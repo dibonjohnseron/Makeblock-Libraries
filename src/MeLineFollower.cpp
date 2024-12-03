@@ -183,3 +183,45 @@ bool MeLineFollower::readSensor2(void)
 #endif // ME_PORT_DEFINED
 }
 
+/**
+ * \par Function
+ *   readAnalogSensor1
+ * \par Description
+ *   Get the analog reading from sensor1 (left sensor).
+ * \par Output
+ *   None
+ * \return
+ *   The analog value from sensor1
+ * \par Others
+ *   None
+ */
+int16_t MeLineFollower::readAnalogSensor1(void)
+{
+#ifdef ME_PORT_DEFINED
+    return MePort::aRead1(); // Assuming MePort has a method for analog read
+#else // ME_PORT_DEFINED
+    return analogRead(_Sensor1); // Read the analog value from the specified pin
+#endif // ME_PORT_DEFINED
+}
+
+/**
+ * \par Function
+ *   readAnalogSensor2
+ * \par Description
+ *   Get the analog reading from sensor2 (right sensor).
+ * \par Output
+ *   None
+ * \return
+ *   The analog value from sensor2
+ * \par Others
+ *   None
+ */
+int16_t MeLineFollower::readAnalogSensor2(void)
+{
+#ifdef ME_PORT_DEFINED
+    return MePort::aRead2(); // Assuming MePort has a method for analog read
+#else // ME_PORT_DEFINED
+    return analogRead(_Sensor2); // Read the analog value from the specified pin
+#endif // ME_PORT_DEFINED
+}
+

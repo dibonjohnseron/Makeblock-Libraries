@@ -158,6 +158,8 @@ public:
  *   None
  */
   bool readSensor2(void);
+  int16_t readAnalogSensor1(void);
+  int16_t readAnalogSensor2(void);
 private:
   volatile uint8_t  _Sensor1;
   volatile uint8_t  _Sensor2;

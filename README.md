@@ -24,7 +24,7 @@ If you have a discussion about licensing issues, please contact me (myan@makeblo
 
 ### How to use:
 
-1. Download the source from the git https://codeload.github.com/Makeblock-official/Makeblock-Libraries/zip/master
+1. Download the source from the git https://codeload.github.com/dibonjohnseron/Makeblock-Libraries/zip/master
 
 2. In the Arduino IDE: "Sketch-> Include Library-> Add .ZIP Library-> select the downloaded file-> Open"
 
@@ -61,5 +61,6 @@ If you have a discussion about licensing issues, please contact me (myan@makeblo
 |Mark Yan    |     2018/05/16  |   3.2.5      |    Correct copyright information.|
 |Vincent He  |     2019/01/04  |   3.2.6      |    1.Mbot /ranger adds the function of communication variables. 2.Solve the blocking problem of 9g steering gear. 3.Solve the problem that the intelligent steering gear cannot read back the parameters. 4.Add version number function. 5.High power code motor reinforcement version query function. 6.Solve the problem of SetColor (uint8_t index, long value) function error in mergharp.cpp. 7.The mBot board cannot extinguish the RGB. First upload the program with the RGB in any color, and then upload the program with the RGB in all colors. The RGB cannot extinguish (MeRGBLed bled. CPP file). 8.In the MegaPi firmware, SLOT1 is changed to slot_num instead of parameter transmission in the command processing stepper motor.|
 |Vincent He  |     2019/09/02  |   3.2.7      |    1.fix the problem that the electronic compass Mecompass is hung on the Orion mainboard 7 or 8 ports and communication will be hung dead. 2.fix the problem that the function getPointFast() in MeHumitureSensor.cpp does not normally output the value. 3.fix the problem that compile smartservo_test.ino firmware error report using the arduino1.6.5 environment with mBlock V3.4.12. 4.remove MeSuperVariable.cpp/MeSuperVariable.h. 5.fix the problem that ultrasonic module can only measure the maximum range of 375cm,and the maximum range of normal requirements is 400cm.|
+|Dibon John Seron  |     2024/12/04  |   3.2.8      |    Add support for analog reading from Line Follower Sensor
 
 ### Learn more from Makeblock official website: www.makeblock.com
